@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imaginex - AI Image Generator</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/imaginex-logo.png" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+
+
+</head>
+
+<body>
+
+  <!-- Loader -->
+  <div class="page-loader">
+    <div class="spinner"></div>
+    <p>Imaginex - AI Image Generator</p>
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay" onclick="toggleMenu()"></div>
+
+  <!-- Header -->
+  <header id="top-navbar" class="top-navbar">
+    <div class="container d-flex justify-content-between align-items-center py-3">
+
+      <!-- Logo -->
+      <a href="index.html" class="logo d-flex align-items-center gap-2">
+        <img src="assets/images/imaginex-logo.png" alt="Imaginex Logo" height="40" />
+        <span class="logo-text">Imaginex</span>
+      </a>
+
+      <!-- Nav Links -->
+      <ul class="nav-links d-flex gap-4 align-items-center mb-0">
+        <li><a class="a-link" href="index.html">Home</a></li>
+        <li><a class="a-link" href="features.html">Features</a></li>
+        <li><a class="a-link" href="about.html">About</a></li>
+        <li><a class="a-link" href="pricing.html">Pricing</a></li>
+        <li class="select-menu position-relative">
+          <span class="select-btn">Blog <img src="assets/images/arrow-204-xl.png" alt="down arrow" /></span>
+          <span class="options position-absolute">
+            <a href="blog.html" class="a-link">Blog</a>
+            <a href="blogDetails.html" class="a-link">Blog Details</a>
+          </span>
+        </li>
+        <li class="select-menu position-relative">
+          <span class="select-btn">More <img src="assets/images/arrow-204-xl.png" alt="down arrow" /></span>
+          <span class="options position-absolute">
+            <a href="faq.html" class="a-link">FAQs</a>
+            <a href="errorPage.html" class="a-link">404 Page</a>
+            <a href="comingSoon.html" class="a-link">Coming Soon</a>
+          </span>
+        </li>
+        <li><a class="a-link" href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Right Buttons -->
+      <div class="header-buttons-main d-flex align-items-center gap-3 ms-4">
+        <a href="#" class="button2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <span>Login</span>
+        </a>
+        <a href="#home" class="button">
+          Get Started
+          <span class="hoverEffect">
+            <span></span>
+          </span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+
+  <section class="section-one position-relative" id="home">
+    <!-- Background gradients -->
+    <img class="blue-gradient1" src="assets/images/blue-gardient1.png" alt="blue-gradient1">
+    <img class="blue-gradient2" src="assets/images/blue-gardient2.png" alt="blue-gradient2">
+
+    <div class="container">
+      <p class="elevate">Elevate Your Experience With</p>
+      <h1 class="bestAI">IMAGINEX AI Image Generator</h1>
+      <p class="olut">
+        Your One-Stop Solution for Content Creation, Audio Generation, Image Crafting, & AI Chatbot Development.
+      </p>
+
+      <!-- Input + Button -->
+      <div class="inputGenerate">
+        <input type="text" placeholder="Astronaut riding a horse on mars, hd" name="Generate" autocomplete="off">
+        <a href="#" class="button generate-btn">
+          Generate
+          <span class="hoverEffect"><span></span></span>
+        </a>
+      </div>
+
+      <!-- Tags -->
+      <div class="hometags-main">
+        <p class="popTg">Popular Tags:</p>
+        <a href="#" class="hometags">Creative</a>
+        <a href="#" class="hometags">Sport</a>
+        <a href="#" class="hometags">Animation</a>
+        <a href="#" class="hometags">Fantasy</a>
+      </div>
+    </div>
+
+    <!-- Image gallery -->
+    <div class="photo-gallery">
+      <div class="single-img">
+        <img src="assets/images/slider1-img1.jpg" alt="slider1-img1">
+      </div>
+      <div class="single-img multi-img">
+        <img src="assets/images/slider1-img3.jpg" alt="slider1-img3">
+        <img src="assets/images/slider1-img4 (1).jpg" alt="slider1-img4">
+      </div>
+      <div class="single-img">
+        <img src="assets/images/slider1-img2.jpg" alt="slider1-img2">
+      </div>
+      <div class="single-img multi-img">
+        <img src="assets/images/slider1-img5.jpg" alt="slider1-img5">
+        <img src="assets/images/slider1-img6.jpg" alt="slider1-img6">
+      </div>
+      <div class="single-img">
+        <img src="assets/images/slider1-img9.jpg" alt="slider1-img9">
+      </div>
+      <div class="single-img multi-img">
+        <img src="assets/images/slider1-img7.jpg" alt="slider1-img7">
+        <img src="assets/images/slider1-img8.jpg" alt="slider1-img8">
+      </div>
+      <div class="single-img">
+        <img src="assets/images/slider1-img10.jpg" alt="slider1-img10">
+      </div>
+      <div class="single-img multi-img">
+        <img src="assets/images/slider1-img11.jpg" alt="slider1-img11">
+        <img src="assets/images/slider1-img12.jpg" alt="slider1-img12">
+      </div>
+    </div>
+  </section>
+  <section class="section-two position-relative">
+    <img class="round-gradient1" src="assets/images/round-gradient1.png" alt="round-gradient1">
+    <div class="container">
+      <h2 class="sec-heding">Our <span>Features</span></h2>
+      <p class="sub-heding">Discover powerful features designed to deliver high-quality images with speed, precision,
+        and creativity — all powered by advanced AI technology.</p>
+      <div class="row home-features-row">
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+          <div class="features-cir-main">
+            <div class="features-cir">
+              <img src="assets/images/features1.png" alt="features1">
+            </div>
+            <span class="img-bg-circle"></span>
+          </div>
+          <h3 class="gendseratio">High Quality Image Generation</h3>
+          <p class="eugiat">Leverage powerful AI to generate ultra-high quality visuals tailored to your creative
+            vision.</p>
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+          <div class="features-cir-main">
+            <div class="features-cir">
+              <img src="assets/images/features2.png" alt="features2">
+            </div>
+            <span class="img-bg-circle"></span>
+          </div>
+          <h3 class="gendseratio">Advanced AI Algorithms</h3>
+          <p class="eugiat">Our advanced AI ensures smarter, faster image generation with intelligent understanding of
+            prompts and styles.</p>
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+          <div class="features-cir-main">
+            <div class="features-cir">
+              <img src="assets/images/features3.png" alt="features3">
+            </div>
+            <span class="img-bg-circle"></span>
+          </div>
+          <h3 class="gendseratio">Multiple Sizes Supported</h3>
+          <p class="eugiat">Whether it’s a thumbnail or a poster, our tool supports a wide range of image sizes
+            effortlessly.</p>
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+          <div class="features-cir-main">
+            <div class="features-cir">
+              <img src="assets/images/features4.png" alt="features4">
+            </div>
+            <span class="img-bg-circle"></span>
+          </div>
+          <h3 class="gendseratio">User-Friendly Interface</h3>
+          <p class="eugiat">Navigate with ease using a modern, streamlined interface built for creators of all levels.
+          </p>
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+          <div class="features-cir-main">
+            <div class="features-cir">
+              <img src="assets/images/features5.png" alt="features5">
+            </div>
+            <span class="img-bg-circle"></span>
+          </div>
+          <h3 class="gendseratio">Image Saving</h3>
+          <p class="eugiat">Securely save your AI-generated images in full quality for future use across any platform.
+          </p>
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+          <div class="features-cir-main">
+            <div class="features-cir">
+              <img src="assets/images/features6.png" alt="features6">
+            </div>
+            <span class="img-bg-circle"></span>
+          </div>
+          <h3 class="gendseratio">Flexible Pricing</h3>
+          <p class="eugiat">Scalable pricing models tailored to suit personal projects, professional work, or enterprise
+            demands.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-three pt-0 position-relative">
+    <img class="blue-gradient3" src="assets/images/blue-gardient1.png" alt="blue-gradient3">
+    <img class="blue-gradient4" src="assets/images/blue-gardient2.png" alt="blue-gradient4">
+
+    <div class="container">
+      <h2 class="sec-heding">
+        <span>Elevate Your Craft</span> with Our Suggestion
+      </h2>
+      <p class="sub-heding">
+        Experience a design revolution as our smart suggestions guide you to new heights,
+        transforming your craft into a masterpiece, one suggestion at a time.
+      </p>
+
+      <div class="wrapper">
+
+        <div class="sugg-box">
+          <div class="sugg-img-main">
+            <img class="sugg-img" src="assets/images/highway.jpg" alt="sugg-img1">
+          </div>
+          <div>
+            <p class="setpSugg">Step 1</p>
+            <h3 class="gendseratio flex-pri">Flexible Pricing</h3>
+            <p class="eugiat flex-pri">
+              Consectetur tellus scelerisque sagittis est sit. Elit sit urna volutpat eu non lorem eu. Tellus senectus
+              tristique risus.
+            </p>
+            <div class="tryImage-btn-main">
+              <a href="#" class="button">Try Text to Image<span class="hoverEffect"><span></span></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sugg-box">
+          <div class="sugg-img-main">
+            <img class="sugg-img" src="assets/images/sea.jpg" alt="sugg-img2">
+          </div>
+          <div>
+            <p class="setpSugg">Step 2</p>
+            <h3 class="gendseratio flex-pri">Input options and style</h3>
+            <p class="eugiat flex-pri">
+              In the realm of creative alchemy, browse through a large library and pick a style that suits your idea
+              perfectly.
+            </p>
+            <div class="tryImage-btn-main">
+              <a href="#" class="button">Try Text to Image<span class="hoverEffect"><span></span></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sugg-box">
+          <div class="sugg-img-main">
+            <img class="sugg-img" src="assets/images/sugg-img2.jpg" alt="sugg-img3">
+          </div>
+          <div>
+            <p class="setpSugg">Step 3</p>
+            <h3 class="gendseratioo flex-pri">Create art with your idea</h3>
+            <p class="eugiat flex-pri">
+              Click to generate a special masterpiece that goes beyond the usual and captures your imagination.
+            </p>
+            <div class="tryImage-btn-main">
+              <a href="#" class="button">Try Text to Image<span class="hoverEffect"><span></span></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-four pt-0">
+    <div class="logos star">
+      <div class="logos-slide ltr">
+        <div class="marquee__content pt-0">
+          <div class="vis-tex">
+            <img class="brand-logos" src="assets/images/flower.png" alt="logo1">
+            <h2 class="white-text">Take Your Visuals to the</h2>
+          </div>
+          <div class="vis-tex">
+            <img class="brand-logos" src="assets/images/flower.png" alt="logo2">
+            <h2 class="gradient-text">IMAGINEX Image Generator</h2>
+          </div>
+          <div class="vis-tex">
+            <img class="brand-logos" src="assets/images/flower.png" alt="logo3">
+            <h2 class="outline-text">Next Level</h2>
+          </div>
+          <div class="vis-tex">
+            <img class="brand-logos" src="assets/images/flower.png" alt="logo4">
+            <h2 class="gradient-text">IMAGINEX Image Generator</h2>
+          </div>
+        </div>
+        <div class="marquee__content pt-0">
+          <div class="vis-tex">
+            <img class="brand-logos" src="assets/images/flower.png" alt="logo1">
+            <h2 class="white-text">Take Your Visuals to the</h2>
+          </div>
+          <div class="vis-tex">
+            <img class="brand-logos" src="assets/images/flower.png" alt="logo2">
+            <h2 class="gradient-text">IMAGINEX Image Generator</h2>
+          </div>
+          <div class="vis-tex">
+            <img class="brand-logos" src="assets/images/flower.png" alt="logo3">
+            <h2 class="outline-text">Next Level</h2>
+          </div>
+          <div class="vis-tex">
+            <img class="brand-logos" src="assets/images/flower.png" alt="logo4">
+            <h2 class="gradient-text">IMAGINEX Image Generator</h2>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <section class="section-six pt-0 overflow-hidden">
+    <div class="container">
+      <h2 class="sec-heding">Powerful AI Features Built for <span>Marketing</span></h2>
+      <p class="sub-heding">We're passionate about empowering creatives with the tools they need to bring their
+        vision to life. That's why we've developed features tailored for modern marketers.</p>
+
+      <div class="row marketingRow">
+        <div class="left-content">
+          <p class="dui pb-2">Sit dui ligula viverra eget volutpat mauris. Nibh sagittis viverra et rhoncus
+            bibendum luctus. Tristique interdum cursus dictum gravida sed feugiat morbi. Id est sed urna
+            maecenas est placerat aliquam et quis. Feugiat vitae justo mi justo nunc senectus sapien non.</p>
+          <p class="dui">Tristique tellus ac proin integer. Vitae elementum vitae sem arcu. Lorem aliquam. Sit dui
+            ligula
+            viverra eget volutpat mauris. Nibh sagittis viverra et rhoncus bibendum luctus.</p>
+        </div>
+
+        <div class="right-content">
+          <div class="quis-head">
+            <div class="features-cir-main">
+              <div class="features-cir">
+                <img src="assets/images/check.png" alt="check">
+              </div>
+              <span class="img-bg-circle"></span>
+            </div>
+            <h3 class="quis-text-list">Create stunning graphics, ads, and content instantly.</h3>
+          </div>
+
+          <div class="quis-head">
+            <div class="features-cir-main">
+              <div class="features-cir">
+                <img src="assets/images/check.png" alt="check">
+              </div>
+              <span class="img-bg-circle"></span>
+            </div>
+            <h3 class="quis-text-list">Maintain visual identity across all platforms.</h3>
+          </div>
+
+          <div class="quis-head">
+            <div class="features-cir-main">
+              <div class="features-cir">
+                <img src="assets/images/check.png" alt="check">
+              </div>
+              <span class="img-bg-circle"></span>
+            </div>
+            <h3 class="quis-text-list">Eliminate repetitive tasks with intelligent automation.</h3>
+          </div>
+
+          <div class="quis-head">
+            <div class="features-cir-main">
+              <div class="features-cir">
+                <img src="assets/images/check.png" alt="check">
+              </div>
+              <span class="img-bg-circle"></span>
+            </div>
+            <h3 class="quis-text-list">Generate visuals backed by performance insights.</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-container">
+        <img class="blue-gardient6" src="assets/images/blue-gardient2.png" alt="blue-gardient6">
+        <img class="blue-gardient5" src="assets/images/blue-gardient1.png" alt="blue-gardient5">
+        <video autoplay loop muted class="home-sec-one-video">
+          <source src="assets/videos/vecteezy_ai-generated-eyes-blink-anime-girl-with-the-red-eyes_42814919.mp4"
+            type="video/mp4">
+        </video>
+        <a href="about.html" class="text-circle-main">
+          <img class="text-circle" src="assets/images/text-circle.png" alt="text-circle">
+          <img class="bg-down-arrow" src="assets/images/bg-down-arrow.png" alt="bg-down-arrow">
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+<footer class="position-relative footer-main">
+    <div class="coprights-main">
+        <svg class="das" xmlns="http://www.w3.org/2000/svg" width="100" height="2" viewBox="0 0 100 2" fill="none">
+            <path d="M100 1L0 1" stroke="url(#paint0_linear_137_271)" stroke-width="2" />
+            <defs>
+                <linearGradient id="paint0_linear_137_271" x1="100" y1="1.5" x2="0" y2="1.5" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#1A1A1A" />
+                    <stop offset="0.5" stop-color="#5C33FF" />
+                    <stop offset="1" stop-color="#1A1A1A" />
+                </linearGradient>
+            </defs>
+        </svg>
+
+        <div class="container">
+            <div class="rights-reserved">
+                <h2>© 2025 - All rights reserved by
+                    <a href="https://github.com/aman7576" target="_blank">The_Aman</a>
+                </h2>
+                <div class="footer-media">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="assets/images/facebook.png" alt="Facebook"> Facebook
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="assets/images/insta.png" alt="Instagram"> Instagram
+                    </a>
+                    <a href="https://x.com" target="_blank">
+                        <img src="assets/images/twitter.png" alt="Twitter"> Twitter
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <img src="assets/images/linkedin.png" alt="LinkedIn"> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<button id="scrollUpBtn">⬆</button>
+
+
+
+
+
+
+  <!-- Scripts -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="assets/script.js"></script>
+
+</body>
+
+</html>
